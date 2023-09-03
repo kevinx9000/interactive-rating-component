@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+  <div id="grid">
+  <div class="content-container" id="rating-content">
+    <img src="images/icon-star.svg" alt="" id="icon-star">
+    <h1 class="heading">How did we do?</h1>
+    <p class="body-text">Please let us know how we did with your support request. All feedback is appreciated to help us
+      improve our offering!</p>
+    <form id="ratings-form">
+      <fieldset class="ratings-list">
+        <input type="radio" name="rating" value="1" id="input-one" required></input>
+        <label for="input-one">1</label>
+        <input type="radio" name="rating" value="2" id="input-two"></input>
+        <label for="input-two">2</label>
+        <input type="radio" name="rating" value="3" id="input-three"></input>
+        <label for="input-three">3</label>
+        <input type="radio" name="rating" value="4" id="input-four"></input>
+        <label for="input-four">4</label>
+        <input type="radio" name="rating" value="5" id="input-five"></input>
+        <label for="input-five">5</label>
+      </fieldset>
+      <button type="submit" id="submit-btn">Submit</button>
+    </form>
+  </div>
+</div>
+  <!-- FOOTER -->
+  <div class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+      <a href="https://www.frontendmentor.io/profile/kevinx9000">Kevin Herrmann</a>.</p>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

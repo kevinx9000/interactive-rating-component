@@ -1,0 +1,159 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/* COLOR GUIDE */
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+/* GENERAL STYLES */
+body {
+    background-color: var(--very-dark-blue);
+    color: var(--light-grey);
+    font-family: 'Overpass', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#grid {
+    height: 90vh;
+    display: grid;
+    place-items: center;
+}
+
+.heading {
+    color: whitesmoke;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.body-text {
+    line-height: 1.5;
+    margin: 8px 0;
+}
+
+/* CONTENT CONTAINER */
+.content-container {
+    background-color: var(--dark-blue);
+    border-radius: 24px;
+    box-sizing: border-box;
+    max-width: 415px;
+    width: 90%;
+    min-width: 325px;
+    min-height: 415px;
+    padding: 28px;  
+}
+
+/* RATING CONTENT */
+#icon-star {
+    background-color: hsl(213, 17%, 23%);
+    border-radius: 50%;
+    padding: 15px;
+    user-select: none;
+}
+
+/* RATINGS FORM */
+form {
+    margin-top: 30px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+.ratings-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.ratings-list label {
+    background-color: hsl(213, 17%, 23%);
+    border-radius: 50%;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 16px;
+    text-align: center;
+    user-select: none;
+    width: 52px;
+    height: 52px;
+    transition: all 0.1s;
+}
+
+.ratings-list label:hover {
+    background-color: var(--light-grey);
+    color: white;
+}
+
+.ratings-list label:active,
+.ratings-list input[type="radio"]:checked + label {
+    background-color: var(--orange);
+    color: white;
+    font-weight: bold;
+}
+
+#submit-btn {
+    background-color: var(--orange);
+    border: none;
+    border-radius: 40px;
+    color: white;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 32px;
+    padding: 12px 0;
+    text-transform: uppercase;
+    user-select: none;
+    width: 100%;
+    transition: all 0.1s;
+}
+
+#submit-btn:hover,
+#submit-btn:focus {
+    background-color: whitesmoke;
+    color: var(--orange);
+    cursor: pointer;
+}
+
+/* THANK YOU CONTAINER */
+#thank-you-content {
+    text-align: center;
+}
+
+#illustration-thank-you {
+    margin: 10px auto;
+}
+
+.result-bar {
+    background-color: hsl(213, 17%, 23%);
+    border-radius: 40px;
+    color: var(--orange);
+    margin: 20px auto 35px;
+    padding: 10px 20px;
+    width: fit-content;
+}
+
+/* FOOTER */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--orange);
+    text-decoration: none;
+}
